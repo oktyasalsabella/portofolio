@@ -606,12 +606,6 @@ h1 {
 /* ════════════════════════════════════
    PROJECTS
 ════════════════════════════════════ */
-/* ════════════════════════════════════
-   PROJECTS SECTION (CSS Perbaikan Total)
-   - Sesuai kode dasar Bella
-   - Perbaikan gambar zoom
-   - Spasi link rapi
-════════════════════════════════════ */
 
 .projects-grid {
   display: grid; 
@@ -706,10 +700,11 @@ h1 {
 /* FITUR FOLLOW LINK: Agar rapi di pojok bawah */
 .project-link-check {
   font-size: 0.75rem;
-  color: var(--purple2);
+  color: #38bdf8;
   text-decoration: underline;
   margin-top: 0.5rem;
   align-self: flex-end; /* Nempel ke kanan bawah */
+  white-space: nowrap;
 }
 
 .project-tag {
