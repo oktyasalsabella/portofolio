@@ -606,48 +606,128 @@ h1 {
 /* ════════════════════════════════════
    PROJECTS
 ════════════════════════════════════ */
+/* ════════════════════════════════════
+   PROJECTS SECTION (CSS Perbaikan Total)
+   - Sesuai kode dasar Bella
+   - Perbaikan gambar zoom
+   - Spasi link rapi
+════════════════════════════════════ */
+
 .projects-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem; margin-top: 3rem;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem; 
+  margin-top: 3rem;
 }
+
 .project-card {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: hidden;
-  display: flex; flex-direction: column;
+  background: var(--card); 
+  border: 1px solid var(--border);
+  border-radius: var(--radius); 
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
   transition: border-color .25s, transform .25s, box-shadow .25s;
 }
+
 .project-card:hover {
-  border-color: var(--purple2); transform: translateY(-4px);
+  border-color: var(--purple2); 
+  transform: translateY(-4px);
   box-shadow: var(--shadow-glow);
 }
+
 .project-doc-slot {
-  position: relative; height: 180px; overflow: hidden;
-  background: var(--card2); border-bottom: 1px solid var(--border);
+  position: relative; 
+  height: 180px; 
+  overflow: hidden;
+  background: var(--card2); 
+  border-bottom: 1px solid var(--border);
+  /* Tambahan agar gambar bisa di-center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.project-doc-slot img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+
+/* ANTI-ZOOM: Mengubah object-fit ke contain agar gambar utuh */
+.project-doc-slot img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; /* Gambar utuh, tidak terpotong atau zoom */
+  padding: 10px; /* Memberi jarak/zoom-out */
+  transition: transform .4s; 
+}
+
 .project-card:hover .project-doc-slot img { transform: scale(1.04); }
+
 .project-doc-slot.doc-empty img { display: none; }
+
 .project-doc-slot .doc-empty-label {
   position: absolute; inset: 0;
   display: none; align-items: center; justify-content: center;
   font-size: .78rem; color: var(--gray2); text-align: center; padding: 1rem;
 }
+
 .project-doc-slot.doc-empty .doc-empty-label { display: flex; }
-.project-body { padding: 1.6rem; display: flex; flex-direction: column; gap: .8rem; flex: 1; }
+
+.project-body { 
+  padding: 1.6rem; 
+  display: flex; 
+  flex-direction: column; 
+  gap: .8rem; 
+  flex: 1; 
+}
+
 .project-year {
   display: inline-block;
-  background: rgba(124,58,237,.12); border: 1px solid rgba(124,58,237,.28);
-  color: var(--purple3); font-size: .72rem; padding: .22rem .7rem;
-  border-radius: 100px; letter-spacing: .05em; text-transform: uppercase;
+  background: rgba(124,58,237,.12); 
+  border: 1px solid rgba(124,58,237,.28);
+  color: var(--purple3); 
+  font-size: .72rem; 
+  padding: .22rem .7rem;
+  border-radius: 100px; 
+  letter-spacing: .05em; 
+  text-transform: uppercase;
   width: fit-content;
 }
-.project-title { font-family: var(--font-head); font-size: 1rem; font-weight: 700; }
-.project-desc { color: var(--gray); font-size: .875rem; line-height: 1.75; flex: 1; }
+
+.project-title { 
+  font-family: var(--font-head); 
+  font-size: 1rem; 
+  font-weight: 700; 
+}
+
+.project-desc { 
+  color: var(--gray); 
+  font-size: .875rem; 
+  line-height: 1.75; 
+  flex: 1; 
+}
+
+/* FITUR FOLLOW LINK: Agar rapi di pojok bawah */
+.project-link-check {
+  font-size: 0.75rem;
+  color: var(--purple2);
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  align-self: flex-end; /* Nempel ke kanan bawah */
+}
+
 .project-tag {
-  display: inline-flex; align-items: center; gap: .3rem;
-  font-size: .75rem; color: var(--accent);
-  background: rgba(56,189,248,.08); border: 1px solid rgba(56,189,248,.2);
-  padding: .25rem .7rem; border-radius: 100px; width: fit-content;
+  display: inline-flex; 
+  align-items: center; 
+  gap: .3rem;
+  font-size: .75rem; 
+  color: var(--accent);
+  background: rgba(56,189,248,.08); 
+  border: 1px solid rgba(56,189,248,.2);
+  padding: .25rem .7rem; 
+  border-radius: 100px; 
+  width: fit-content;
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; }
 }
 
 
