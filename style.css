@@ -621,6 +621,7 @@ h1 {
   overflow: hidden;
   display: flex; 
   flex-direction: column;
+  height: 100%; /* Memastikan semua kartu punya tinggi sama */
   transition: border-color .25s, transform .25s, box-shadow .25s;
 }
 
@@ -636,18 +637,16 @@ h1 {
   overflow: hidden;
   background: var(--card2); 
   border-bottom: 1px solid var(--border);
-  /* Tambahan agar gambar bisa di-center */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ANTI-ZOOM: Mengubah object-fit ke contain agar gambar utuh */
 .project-doc-slot img { 
   width: 100%; 
   height: 100%; 
-  object-fit: contain; /* Gambar utuh, tidak terpotong atau zoom */
-  padding: 10px; /* Memberi jarak/zoom-out */
+  object-fit: contain; /* Anti-zoom: Gambar utuh */
+  padding: 10px; 
   transition: transform .4s; 
 }
 
@@ -668,7 +667,7 @@ h1 {
   display: flex; 
   flex-direction: column; 
   gap: .8rem; 
-  flex: 1; 
+  flex: 1; /* Mengisi sisa ruang kartu */
 }
 
 .project-year {
@@ -694,17 +693,28 @@ h1 {
   color: var(--gray); 
   font-size: .875rem; 
   line-height: 1.75; 
-  flex: 1; 
+  flex: 1; /* Mendorong footer-row ke paling bawah */
 }
 
-/* FITUR FOLLOW LINK: Agar rapi di pojok bawah */
+/* FOOTER ROW: Wadah untuk Tag & Link agar sejajar */
+.project-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; 
+  padding-top: 0.5rem;
+}
+
 .project-link-check {
-  font-size: 0.75rem;
-  color: #38bdf8;
+  font-size: 0.7rem; /* Ukuran kecil agar pas */
+  color: #38bdf8; /* Warna biru sesuai permintaan */
   text-decoration: underline;
-  margin-top: 0.5rem;
-  align-self: flex-end; /* Nempel ke kanan bawah */
-  white-space: nowrap;
+  white-space: nowrap; /* Anti-turun baris */
+  transition: opacity 0.2s;
+}
+
+.project-link-check:hover {
+  opacity: 0.8;
 }
 
 .project-tag {
@@ -723,6 +733,11 @@ h1 {
 /* Responsif Mobile */
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
+  .project-footer-row {
+    flex-direction: row; /* Tetap sejajar di HP jika muat */
+    flex-wrap: wrap; 
+    gap: 0.5rem;
+  }
 }
 
 
