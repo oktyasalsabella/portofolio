@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oktya Salsabella — IT Portofolio</title>
+  <meta name="description" content="Portofolio of Oktya Salsabella — IT Student, AI Enthusiast & Digital Content Creator" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+    <nav class="menu-nav">
+      <a href="#home"       class="menu-link" data-section="home">Home</a>
+      <a href="#about"      class="menu-link" data-section="about">About Me</a>
+      <a href="#skills"     class="menu-link" data-section="skills">Skills</a>
+      <a href="#experience" class="menu-link" data-section="experience">Experience</a>
+      <a href="#projects"   class="menu-link" data-section="projects">Projects</a>
+      <a href="#creator"    class="menu-link" data-section="creator">Content Creator</a>
+      <a href="#certs"      class="menu-link" data-section="certs">Certifications</a>
+      <a href="#contact"    class="menu-link" data-section="contact">Contact</a>
+    </nav>
+    <div class="menu-footer"><p>© 2025 Oktya Salsabella</p></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">Portofolio<span>.</span></a>
+    <nav class="nav-links-desktop" aria-label="Desktop navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta-btn">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          S1 Informatics · Siliwangi University
+        </span>
+        <h1>
+          <span class="h1-line">Oktya</span>
+          <span class="h1-line accent">Salsabella</span>
+        </h1>
+        <p class="hero-sub">
+          IT Student · AI Enthusiast · Digital Content Creator —
+          building skills at the intersection of technology, innovation, and creativity.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn--primary">View Projects ↓</a>
+          <a href="#contact"  class="btn btn--ghost">Get in Touch</a>
+          <!-- TAMBAHAN: tombol download CV -->
+          <a href="assets/CV_Oktya_Salsabella.pdf" class="btn btn--cv" download>
+            ⬇ Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3<em>.87</em></span>
+            <span class="stat-lbl">GPA / 4.00</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3.5K<em>+</em></span>
+            <span class="stat-lbl">TikTok Followers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1.5K<em>+</em></span>
+            <span class="stat-lbl">YouTube Subs</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">490</span>
+            <span class="stat-lbl">TOEFL Score</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo" id="heroPhoto">
+          <img src="assets/profile.jpeg" alt="Oktya Salsabella"
+               onerror="this.parentElement.classList.add('photo-placeholder')" />
+          <div class="photo-placeholder-label">
+            <span>📷</span>
+            <span>Your Photo Here</span>
+            <small>Replace src in index.html</small>
+          </div>
+        </div>
+        <div class="hero-photo-badge">AI Enthusiast 🤖</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title reveal">Who is Oktya?</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Active <strong>2nd-semester Informatics undergraduate</strong> at Siliwangi University with a GPA of 3.87/4.00. Passionate about <strong>Artificial Intelligence, Technology, Innovation, and Business</strong>.</p>
+          <p>Proficient in Google Workspace and Microsoft Office for productivity and team collaboration. Strong communicator in both Indonesian and English — TOEFL score 490 with Excellent distinction from Lilingua English Course.</p>
+          <p>Active member of <strong>Google Developer Groups on Campus Widyatama</strong>, constantly exploring the AI ecosystem and developer community. Fast learner, results-driven, and highly adaptable to new technologies.</p>
+          <div class="about-langs">
+            <div class="lang-badge">🇮🇩 Indonesian — Fluent</div>
+            <div class="lang-badge">🇬🇧 English — TOEFL 490</div>
+          </div>
+          <!-- TAMBAHAN: tombol download CV di About juga -->
+          <a href="assets/CV_Oktya_Salsabella.pdf" class="btn btn--cv" download style="margin-top:1.2rem; width:fit-content;">
+            ⬇ Download CV
+          </a>
+        </div>
+        <div class="about-right">
+          <div class="about-cards">
+            <div class="about-card reveal">
+              <span class="about-card-num">3.87</span>
+              <span class="about-card-lbl">Current GPA</span>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-num">490</span>
+              <span class="about-card-lbl">TOEFL Score</span>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-num">3.5K+</span>
+              <span class="about-card-lbl">TikTok Followers</span>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-num">1.5K+</span>
+              <span class="about-card-lbl">YouTube Subs</span>
+            </div>
+          </div>
+          <div class="edu-timeline reveal">
+            <h3 class="timeline-heading">Education</h3>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-body">
+                <strong>Siliwangi University</strong>
+                <span>S1 Informatics · GPA 3.87</span>
+                <small>Aug 2025 – Present</small>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-body">
+                <strong>SMAN 1 Krangkeng</strong>
+                <span>MIPA · Ruangguru Science Competition (Provincial)</span>
+                <small>Jul 2022 – May 2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <span class="section-label">Capabilities</span>
+      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+      <p class="section-sub reveal">A blend of technical hard skills and interpersonal soft skills driving collaboration and innovation.</p>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">💻</div>
+            <h3 class="skill-title">Productivity &amp; Office</h3>
+            <div class="skill-tags">
+              <span class="tag">Microsoft Word</span>
+              <span class="tag">PowerPoint</span>
+              <span class="tag">Google Docs</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">Google Slides</span>
+              <span class="tag">Google Drive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">🎨</div>
+            <h3 class="skill-title">Design &amp; Creative</h3>
+            <div class="skill-tags">
+              <span class="tag">Canva</span>
+              <span class="tag">CapCut</span>
+              <span class="tag">Photo Editing</span>
+              <span class="tag">Video Editing</span>
+              <span class="tag">Videography</span>
+              <span class="tag">Photography</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">🤖</div>
+            <h3 class="skill-title">Technology &amp; AI</h3>
+            <div class="skill-tags">
+              <span class="tag">AI-Assisted Coding</span>
+              <span class="tag">Ethical & Prompting AI</span>
+              <span class="tag">Data Literacy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">🗣️</div>
+            <h3 class="skill-title">Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="tag">Communication</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Time Management</span>
+              <span class="tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">📱</div>
+            <h3 class="skill-title">Content &amp; Community</h3>
+            <div class="skill-tags">
+              <span class="tag">Content Strategy</span>
+              <span class="tag">Community Building</span>
+              <span class="tag">Audience Growth</span>
+              <span class="tag">Content Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-content">
+            <div class="skill-icon">🌐</div>
+            <h3 class="skill-title">Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">Indonesian — Fluent</span>
+              <span class="tag">English — TOEFL 490</span>
+              <span class="tag">Excellent Grade</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tools image slot -->
+      <div class="skill-tools-slot reveal">
+        <p class="skill-tools-label">🛠️ Tools I Use</p>
+        <div class="skill-tools-img-wrap" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center; margin-top: 30px;">
+          
+          <img src="https://download.logo.wine/logo/Microsoft_Word/Microsoft_Word-Logo.wine.png" alt="Word" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://download.logo.wine/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.png" alt="PowerPoint" style="height: 80px; width: auto; object-fit: contain;" />
+          
+          <img src="https://1000logos.net/wp-content/uploads/2020/05/Google-Docs-Logo-2014.png" alt="Docs" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://img.utdstc.com/icon/5c6/b29/5c6b29f8bc2051f62849b1e218dfe5bc190a197aedbdf7649d390dd0754df28f:200" alt="Sheets" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://logos-world.net/wp-content/uploads/2023/12/Google-Slides-Logo-2014.png" alt="Slides" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://static.vecteezy.com/system/resources/previews/012/871/368/non_2x/google-drive-icon-google-product-illustration-free-png.png" alt="Drive" style="height: 80px; width: auto; object-fit: contain;" />
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="height: 80px; width: auto; object-fit: contain; filter: invert(1);" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript" style="height: 80px; width: auto; object-fit: contain;" />
+          
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/067/941/712/small/claude-ai-logo-rounded-hd-free-png.png" alt="Claude AI" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" style="height: 80px; width: auto; object-fit: contain;" />
+
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/067/065/640/small_2x/capcut-logo-square-rounded-capcut-logo-capcut-logo-free-download-free-png.png" alt="CapCut" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/048/759/334/small/canva-transparent-icon-free-png.png" alt="Canva" style="height: 80px; width: auto; object-fit: contain;" />
+          <img src="https://img.icons8.com/color/600/youtube-studio.png" alt="YouTube" style="height: 80px; width: auto; object-fit: contain;" />
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <span class="section-label">Journey</span>
+      <h2 class="section-title reveal">Experience &amp; Organizations</h2>
+      <div class="exp-list">
+
+        <div class="exp-card reveal">
+          <div class="exp-doc-slot">
+            <img src="assets/gdg.png" alt="GDG on Campus documentation"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add photo / documentation</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <div>
+                <h3 class="exp-role">Member — Google Developer Groups on Campus Widyatama</h3>
+                <p class="exp-org">GDG on Campus Widyatama</p>
+              </div>
+              <span class="exp-period">Nov 2025 – Present</span>
+            </div>
+            <p class="exp-desc">Actively participating in weekly AI study sessions, deepening understanding of Machine Learning fundamentals and ethical AI implementation, while building a professional network within the developer community.</p>
+          </div>
+        </div>
+
+        <!-- Content Creator — 2 photo slots -->
+        <div class="exp-card reveal">
+          
+          <div class="exp-doc-slot exp-doc-slot--double" style="display: flex; gap: 16px; margin-bottom: 15px; align-items: flex-start;">
+            <div class="exp-doc-half" style="flex: 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); background-color: #111;">
+              <img src="assets/content_1.jpeg" alt="TikTok Profile" style="width: 100%; height: auto; display: block;"
+                   onerror="this.parentElement.classList.add('doc-empty')" />
+              <div class="doc-empty-label" style="display: none;">📎 Photo 1</div>
+            </div>
+            <div class="exp-doc-half" style="flex: 1; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); background-color: #111;">
+              <img src="assets/content_2.jpeg" alt="YouTube Profile" style="width: 100%; height: auto; display: block;"
+                   onerror="this.parentElement.classList.add('doc-empty')" />
+              <div class="doc-empty-label" style="display: none;">📎 Photo 2</div>
+            </div>
+          </div>
+
+          <div class="exp-body">
+            <div class="exp-meta">
+              <div>
+                <h3 class="exp-role">Digital Content Creator</h3>
+                <p class="exp-org">TikTok &amp; YouTube</p>
+              </div>
+              <span class="exp-period">Jul 2024 – Present</span>
+            </div>
+            <p class="exp-desc">Managing an educational TikTok account (3.5K+ followers) and a YouTube curated content channel (1.5K+ subscribers). Handling independent research, editing, and audience growth strategy.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+              
+              <a href="https://www.youtube.com/@octareact" class="contact-card" target="_blank" rel="noopener" style="padding: 12px 16px; min-height: auto;">
+                <div class="contact-card-icon" style="background: rgba(255, 0, 0, 0.1); color: #ff0000; width: 40px; height: 40px;">
+                  <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-info">
+                  <span class="contact-card-platform" style="font-size: 0.9rem;">YouTube Channel</span>
+                  <span class="contact-card-value" style="font-size: 0.8rem; color: #aaa;">@octareact</span>
+                </div>
+                <span class="contact-arrow-badge" style="width: 30px; height: 30px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 14px; height: 14px;">
+                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                  </svg>
+                </span>
+              </a>
+
+              <a href="https://www.tiktok.com/@belasupermacy?_r=1&_t=ZS-949WMh3HT3V" class="contact-card" target="_blank" rel="noopener" style="padding: 12px 16px; min-height: auto;">
+                <div class="contact-card-icon" style="background: rgba(255, 255, 255, 0.1); color: #fff; width: 40px; height: 40px;">
+                  <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.01.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-.9 4.45-2.35 6.08-1.45 1.62-3.4 2.63-5.55 2.85-2.15.22-4.4-.04-6.3-1.1-1.9-1.06-3.4-2.75-4.2-4.75-.8-2-1.02-4.25-.6-6.35.42-2.1 1.55-3.95 3.18-5.25 1.63-1.3 3.65-2 5.75-1.95v4.05c-1.1-.03-2.22.25-3.15.82-.93.57-1.65 1.4-2.05 2.4-.4.98-.45 2.08-.18 3.1.27 1.02.85 1.9 1.65 2.5.8.6 1.8.9 2.82.88 1.02-.02 2-.4 2.75-1.02.75-.63 1.25-1.5 1.45-2.5.2-.98.15-2.02-.1-2.98V.02h3.05z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-info">
+                  <span class="contact-card-platform" style="font-size: 0.9rem;">TikTok Profile</span>
+                  <span class="contact-card-value" style="font-size: 0.8rem; color: #aaa;">@belasupermacy</span>
+                </div>
+                <span class="contact-arrow-badge" style="width: 30px; height: 30px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 14px; height: 14px;">
+                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                  </svg>
+                </span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-doc-slot">
+            <img src="assets/pks.jpeg" alt="PKS documentation"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add photo / documentation</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <div>
+                <h3 class="exp-role">Teaching Council — School Security Patrol</h3>
+                <p class="exp-org">SMAN 1 Krangkeng</p>
+              </div>
+              <span class="exp-period">Aug 2023 – Sep 2024</span>
+            </div>
+            <p class="exp-desc">Responsible for maintaining school discipline and order. Led leadership training for new members and oversaw the smooth running of various official school events.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <span class="section-label">Work</span>
+      <h2 class="section-title reveal">Academic Projects</h2>
+      <p class="section-sub reveal">Real-world applications built during my studies.</p>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-doc-slot">
+            <img src="assets/schedule.png" alt="Scheduling website documentation"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add project screenshot</div>
+          </div>
+          <div class="project-body">
+            <span class="project-year">Nov 2025</span>
+            <h3 class="project-title">Adaptive Student Scheduling Website</h3>
+            <p class="project-desc">Contributed to the design of the concept and logic for a student time-management system. Fully responsible for research reports and technical documentation to ensure the project met academic standards.</p>
+            <span class="project-tag">📚 Final Exam Project</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-doc-slot">
+            <img src="assets/unsilweb.png" alt="Exfo Campus website documentation"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add project screenshot</div>
+          </div>
+          <div class="project-body">
+            <span class="project-year">Dec 2025 – Jan 2026</span>
+            <h3 class="project-title">Siliwangi Intelligence & Campus Exploration (SICES)</h3>
+            <p class="project-desc">Designed and built a website as an information hub to introduce Siliwangi University to high-school students using AI-Assisted Coding. Focused on user-friendly UI and clear information architecture.</p>
+            <span class="project-tag">🤖 AI-Assisted Coding</span>
+            <span class="project-tag">💻 Independent Project</span>
+          </div>
+        </div>
+
+        <!-- Card kosong -->
+       <div class="project-card reveal">
+          <div class="project-doc-slot" style="background-color: #111; border-radius: 12px; overflow: hidden; margin-bottom: 16px; padding: 10px;">
+            
+            <img src="assets/portofolioweb.png" alt="Personal Portfolio Website screenshot"
+                 style="width: 100%; height: auto; object-fit: contain; display: block; border-radius: 6px;"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label" style="display: none;">📎 Add project screenshot</div>
+            
+          </div>
+          <div class="project-body">
+            <span class="project-year">Feb 2026</span>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">Designed and developed a responsive personal website to showcase my academic journey, IT projects, and digital content. Built from scratch focusing on a modern UI and smooth user experience.</p>
+            <span class="project-tag">💻 Independent Project</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTENT CREATOR -->
+  <section class="section" id="creator">
+    <div class="container">
+      <span class="section-label">Digital Creator</span>
+      <h2 class="section-title reveal">Building Online Communities</h2>
+      <p class="section-sub reveal">Organic educational content that resonates with the next generation of tech enthusiasts.</p>
+      <div class="creator-grid" style="width: 100%;">
+
+        <div class="creator-card reveal" style="width: 100%;">
+          <div class="creator-platform">YouTube</div>
+          <div class="creator-num">1<span class="suf">.5K<em>+</em></span></div>
+          <div class="creator-metric">Subscribers</div>
+          <p class="creator-desc">Managing a curated content and reaction channel (@octareact). Focused on high-quality editing, video clipping, and sustainable organic subscriber growth.</p>
+          
+          <div class="viral-section" style="margin-top: 20px;">
+            <h4 class="viral-heading" style="margin-bottom: 12px;">🔥 Viral Content Highlights</h4>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%;">
+              <a href="https://youtube.com/shorts/L7kiNgQOkqs?si=ZjmCCSYhht_JLpPV" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="https://i.ytimg.com/vi/L7kiNgQOkqs/hqdefault.jpg" alt="Shorts 1" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 3.8M Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+
+              <a href="https://youtube.com/shorts/wHnXAOJWXtU?si=mfvY12zpp8lcY3Vc" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="https://i.ytimg.com/vi/wHnXAOJWXtU/hqdefault.jpg" alt="Shorts 2" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 103K Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+
+              <a href="https://youtube.com/shorts/wPAgVaZjPBo?si=zyhlJVKCO5tk7Rxt" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="https://i.ytimg.com/vi/wPAgVaZjPBo/hqdefault.jpg" alt="Shorts 3" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 33K Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator-card reveal" style="width: 100%;">
+          <div class="creator-platform">TikTok</div>
+          <div class="creator-num">3<span class="suf">.5K<em>+</em></span></div>
+          <div class="creator-metric">Followers</div>
+          <p class="creator-desc">Actively engaged in building a digital learning community through short-form English language videos, reaching young audiences with engaging and consistent content.</p>
+          
+          <div class="viral-section" style="margin-top: 20px;">
+            <h4 class="viral-heading" style="margin-bottom: 12px;">🔥 Viral Content Highlights</h4>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%;">
+              <a href="https://vt.tiktok.com/ZSmqFLyBS/" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="assets/thumb_1.jpeg" alt="TikTok 1" onerror="this.src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&q=80'" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 720K Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+
+              <a href="https://vt.tiktok.com/ZSmqFWLBe/" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="assets/thumb_2.jpeg" alt="TikTok 2" onerror="this.src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&q=80'" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 260K Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+
+              <a href="https://vt.tiktok.com/ZSmqFpqhQ/" class="vid-card-tt" target="_blank" rel="noopener">
+                <img src="assets/thumb_3.jpeg" alt="TikTok 3" onerror="this.src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&q=80'" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px;">
+                  <span style="color: #fff; font-size: 0.8rem; font-weight: bold;">▶ 50K Views</span>
+                </div>
+                <div class="vid-arrow">↗</div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section--alt" id="certs">
+    <div class="container">
+      <span class="section-label">Achievements</span>
+      <h2 class="section-title reveal">Certifications &amp; Training</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-img-slot">
+            <img src="assets/dicoding.jpeg" alt="Dicoding certificate"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add certificate image</div>
+          </div>
+          <span class="cert-year">2025</span>
+          <h3 class="cert-title">Fundamentals of AI</h3>
+          <p class="cert-issuer">Dicoding Indonesia</p>
+          <p class="cert-detail">Fundamental AI &amp; Machine Learning — understanding the foundations of artificial intelligence and its real-world applications.</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-img-slot">
+            <img src="assets/itb.jpeg" alt="ITB certificate"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add certificate image</div>
+          </div>
+          <span class="cert-year">2026</span>
+          <h3 class="cert-title">ICE Masterclass</h3>
+          <p class="cert-issuer">Institut Teknologi Bandung (ITB)</p>
+          <p class="cert-detail">Leading With AI: From Data Literacy to Ethical AI — AI-driven leadership and data literacy in the modern era.</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-img-slot">
+            <img src="assets/toefl.jpeg" alt="Lilingua certificate"
+                 onerror="this.parentElement.classList.add('doc-empty')" />
+            <div class="doc-empty-label">📎 Add certificate image</div>
+          </div>
+          <span class="cert-year">2025</span>
+          <h3 class="cert-title">English Language</h3>
+          <p class="cert-issuer"> PT. Daily Cipta Dwipa</p>
+          <p class="cert-detail">Advanced English communication skills with a TOEFL score of 490.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-inner">
+      <span class="section-label">Let's Connect</span>
+      <h2 class="section-title reveal">Let's Collaborate</h2>
+      <p class="section-sub reveal center">Open to internship opportunities, collaboration projects, and networking. Don't hesitate to reach out!</p>
+      <div class="contact-btn-wrap reveal">
+        <a href="mailto:oktyasalsabella@gmail.com" class="btn btn--primary btn--lg">Send an Email ↗</a>
+        <!-- TAMBAHAN: tombol download CV di contact juga -->
+        <a href="assets/CV_Oktya_Salsabella.pdf" class="btn btn--cv btn--lg" download>⬇ Download CV</a>
+      </div>
+      <div class="contact-cards reveal">
+
+        <a href="https://wa.me/6285601573410" class="contact-card" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-platform">WhatsApp</span>
+            <span class="contact-card-value">+62 856 0157 3410</span>
+          </div>
+          <span class="contact-arrow-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/oktyasalsabella" class="contact-card" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <div class="contact-card-icon contact-card-icon--linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-platform">LinkedIn</span>
+            <span class="contact-card-value">oktyasalsabella</span>
+          </div>
+          <span class="contact-arrow-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="mailto:oktyasalsabella@gmail.com" class="contact-card" aria-label="Email">
+          <div class="contact-card-icon contact-card-icon--email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-platform">Email</span>
+            <span class="contact-card-value">oktyasalsabella@gmail.com</span>
+          </div>
+          <span class="contact-arrow-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+      <p class="contact-location reveal">📍 Tasikmalaya, West Java, Indonesia</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2025 Oktya Salsabella. All rights reserved.</span>
+    <span>S1 Informatics · <a href="https://www.unsil.ac.id" target="_blank" rel="noopener">Siliwangi University</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
