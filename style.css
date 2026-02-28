@@ -1118,3 +1118,26 @@ h1 {
   object-fit: cover;
   display: block;
 }
+
+/* Project link */
+.project-link-small {
+  font-size: .78rem;
+  color: #38bdf8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.project-link-small:hover {
+  color: #7dd3fc;
+}
+
+.project-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-top: auto;
+  padding-top: .8rem;
+  flex-wrap: wrap;
+}
